@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "id": "mock-profile-lena",
+    "username": "lena.okoye",
+    "first_name": "Lena",
+    "last_name": "Okoye",
+    "job_title": "Director of Photography",
+    "company": "Northline Pictures",
+    "description": "Mock partner profile. Public projects only; the key selects this profile.",
+    "contacts": {
+      "emails": [{ "email": "lena@northline.example", "title": "Work" }],
+      "phones": [{ "country_code": "+1", "phone": "5550100", "title": "Studio" }],
+      "social_media": [
+        {
+          "platform": "instagram",
+          "username": "lena.okoye",
+          "url": "https://instagram.com/lena.okoye"
+        }
+      ],
+      "websites": [{ "title": "Reel", "url": "https://northline.example" }]
+    },
+    "projects": [
+      {
+        "id": "harbor-light",
+        "title": "Harbor Light",
+        "headline": "A night-exterior short about a ferry dispatcher"
+      },
+      {
+        "id": "empty-groups",
+        "title": "Quiet Cut"
+      }
+    ]
+  },
+  "projects": {
+    "harbor-light": {
+      "id": "harbor-light",
+      "title": "Harbor Light",
+      "headline": "A night-exterior short about a ferry dispatcher",
+      "description": "Public project payload. groups is an array. Asset URLs are not proxied.",
+      "status": "public",
+      "dates": [
+        {
+          "id": "date-1",
+          "title": "Principal photography",
+          "type": "production",
+          "date": "2025-11-04",
+          "is_primary": true
+        }
+      ],
+      "contributors": [
+        {
+          "id": "contrib-1",
+          "first_name": "Lena",
+          "last_name": "Okoye",
+          "team_role": "DP",
+          "team_section": "Camera"
+        },
+        {
+          "id": "contrib-2",
+          "first_name": "Marco",
+          "last_name": "Hill",
+          "team_role": "Gaffer",
+          "team_section": "Electric"
+        }
+      ],
+      "groups": [
+        {
+          "title": "Stills",
+          "sections": [
+            {
+              "id": "section-night",
+              "title": "Night unit",
+              "template_type": "gallery",
+              "descriptions": [
+                {
+                  "title": "Unit stills",
+                  "text": "Ordered assets as they appear on the public page."
+                }
+              ],
+              "assets": [
+                {
+                  "id": "asset-1",
+                  "title": "Ferry deck",
+                  "alt": "Wet deck under sodium lamps",
+                  "file_format": "jpg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "empty-groups": {
+      "id": "empty-groups",
+      "title": "Quiet Cut",
+      "headline": "Editorial with no groups yet",
+      "contributors": [],
+      "groups": []
+    }
+  }
+}
