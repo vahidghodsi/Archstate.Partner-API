@@ -33,6 +33,11 @@ function AssetCard({ asset }: { asset: PartnerAsset }) {
         <span className="block truncate text-xs font-medium text-zinc-200">
           {asset.title || asset.id}
         </span>
+        {asset.description ? (
+          <span className="mt-1 line-clamp-3 text-[11px] leading-4 text-zinc-400">
+            {asset.description}
+          </span>
+        ) : null}
         <span className="mt-0.5 flex items-center gap-1 text-[10px] text-zinc-500">
           {asset.file_format ? <span>{asset.file_format}</span> : null}
           {href ? <ExternalLink className="size-3" /> : null}
